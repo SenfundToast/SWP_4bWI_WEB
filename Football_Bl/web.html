@@ -7,6 +7,22 @@
     <title>Fußball_Bundesliga_1</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        background1: '#1E1E1E',
+
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
 
 <body>
@@ -16,10 +32,31 @@
         </div>
     </div>
 
-    <div class="stats">
+
+    <div class="bg-background1 max-w h-20 grid grid-cols-3 items-center">
+
+        <div class="text-white grid grid-cols-2 text-center">
+            <div>Team name</div>
+            <div>Matches</div>
+        </div>
+
+        <div class="grid grid-cols-3 text-white ">
+            <div class="">W</div>
+            <div class="">D</div>
+            <div class="">L</div>
+        </div>
+
+        <div class="grid grid-cols-2 text-white">
+            <div class=" ">Goals</div>
+            <div class=" ">Points</div>
+        </div>
+
+
+
+
     </div>
 
-    <div></div>
+
 
 </body>
 
