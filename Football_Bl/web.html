@@ -16,6 +16,7 @@
                     colors: {
                         clifford: '#da373d',
                         background1: '#1E1E1E',
+                        firstplays: '#FFBA08',
 
                     }
                 }
@@ -33,12 +34,12 @@
     </div>
 
 
-    <div class="bg-background1 max-w h-20 grid grid-cols-3 items-center text-center text-white">
+    <div class="bg-background1 h-[10vh] grid grid-cols-3 items-center text-center text-white">
 
         <div class="grid grid-cols-9">
             <div class="col-span-1">num</div>
             <div class="col-span-1">logo</div>
-            <div class="col-span-5">Team name</div>
+            <div class="col-span-5 hover:text-clifford">Team name</div>
             <div class="col-span-2">Matches</div>
         </div>
 
@@ -53,7 +54,25 @@
             <div class="col-span-2">Points</div>
         </div>
 
+        <div id="table_1" class="bg-firstplays w-[100vw]  grid grid-cols-3 items-center text-center text-white mt-5">
+            <div class="grid grid-cols-9">
+                <div class="col-span-1 ">num</div>
+                <div class="col-span-1">logo</div>
+                <div class="col-span-5">Team name</div>
+                <div class="col-span-2">Matches</div>
+            </div>
 
+            <div class="grid grid-cols-3">
+                <div class="col-span-1">W</div>
+                <div class="col-span-1">D</div>
+                <div class="col-span-1">L</div>
+            </div>
+
+            <div class="grid grid-cols-4">
+                <div class="col-span-2">Goals</div>
+                <div class="col-span-2">Points</div>
+            </div>
+        </div>
 
 
     </div>
