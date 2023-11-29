@@ -20,7 +20,7 @@ function insertTable(data) {
             <div class="grid grid-cols-9">
                 <div class="col-span-1 ">${index +1}</div>
                 <div class="col-span-1"><img width="35px" src="${team.teamIconUrl}"></div>
-                <div class="col-span-5">${team.teamName}</div>
+                <a class="col-span-5 hover:text-clifford" href="footballInfo.html">${team.teamName}</a>
                 <div class="col-span-2">${team.matches}</div>
             </div>
 
