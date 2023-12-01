@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manschaft Info</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
         tailwind.config = {
             theme: {
                 extend: {
+                    // fontFamily: {
+                    //     'sans': ['"Proxima Nova"', ...defaultTheme.fontFamily.sans],
+                    // },
                     colors: {
                         clifford: '#da373d',
                         background1: '#1E1E1E',
-                        firstplays: '#FFBA08',
+                        yellow: '#FFBA08',
                         Bg2: '#370617',
 
 
@@ -24,54 +27,17 @@
             }
         }
     </script>
+    <style>
+
+    </style>
 </head>
 
 <body>
     <div class="bg-Bg2 h-screen">
 
-        <a class="bg-clifford w-3/4 h-28  bottom-0 left-5 border-4  absolute flex justify-center items-center text-black" href="web.html">View Full Table</a>
+        <a class="bg-yellow w-2/4 h-28 left-1/4 bottom-10  border-yellow border-8 rounded-xl   absolute flex justify-center items-center text-black text-5xl font-hind" href="web.html">View Full Table</a>
 
     </div>
-
-
-    <!-- /* Property 1=Default */
-
-position: absolute;
-width: 1505px;
-height: 164px;
-left: 20px;
-top: 20px;
-
-
-
-/* Rectangle 25 */
-
-box-sizing: border-box;
-
-position: absolute;
-
-background: #FFBA08;
-border-radius: 40px;
-
-
-/* View Full Table */
-
-position: absolute;
-width: 422px;
-height: 86px;
-left: 542px;
-top: 39px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 50px;
-line-height: 61px;
-
-color: #000000;
-
-border: 1px solid #000000; -->
-
 
 </body>
 
