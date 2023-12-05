@@ -10,8 +10,7 @@
 
 .header {
     width: 100%;
-    height: 50vh;
-    object-fit: cover;
+    height: 40vh;
     background: url('./Image/Football.jpg') center/cover no-repeat fixed;
 }
 

@@ -15,7 +15,7 @@ function insertTable(data) {
 
     data.forEach((team, index) => {
         html += `
-        <div class="bg-firstplays max-w-full  grid grid-cols-3 items-center text-center text-white mt-5 border-2 border-neutral-900 row-span-4">
+        <div class="bg-firstplays max-w-full  grid grid-cols-3 items-center text-center text-black mt-5 border-2 border-neutral-900 row-span-4">
             
             <div class="grid grid-cols-9">
                 <div class="col-span-1 ">${index +1}</div>
