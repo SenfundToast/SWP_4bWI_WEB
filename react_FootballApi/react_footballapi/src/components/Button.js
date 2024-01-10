@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Button() {
-    return ( <
-        div > SuperButton < /div>
-    )
+  return (
+    <div>SuperButton</div>
+  )
 }
