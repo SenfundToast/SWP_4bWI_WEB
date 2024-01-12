@@ -1,4 +1,26 @@
-.person{
+.person {
   border-style: solid;
   background-color: green;
+}
+
+.card {
+  border-style: solid;
+  background-color: rebeccapurple;
+  display: flex;
+
+}
+
+.card2 {}
+
+.imageContainer {
+  width: 300px;
+  height: 300px;
+  background-color: greenyellow;
+
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+
 }
