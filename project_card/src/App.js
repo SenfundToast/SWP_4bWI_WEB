@@ -5,8 +5,8 @@ import Card from './components/Card';
 
 function App() {
   return (
-    <div className="person">
-      <h1>Hallo</h1>
+    <div className="border-solid border-2 border-black bg-blue">
+      <h1>Person Card</h1>
       <Person/>
     </div>
 
