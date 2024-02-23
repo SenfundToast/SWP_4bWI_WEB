@@ -3,6 +3,7 @@ import Card from "./Card";
 
 export default function Person(){
     const [people, setPeople] = useState([]);
+    const [color, setColor] = useState(["green"]);
 
 useEffect(()=>{
     fetch("https://65d5cb14f6967ba8e3bc959d.mockapi.io/Person").then(
@@ -12,10 +13,14 @@ useEffect(()=>{
     );
 },   []);
 
+useEffect(()=>{
+      alert("change");
+},   [color])
 
     return(
         <div>
             <h1 className=""></h1>
+            <button onClick={()=>{setColor("orange")}}>Change Color</button>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
             {people.map(person => {
                 return <Card name={person.name} imageUrl={person.avatar} title={person.jobtitle}/>
