@@ -1,16 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-import Button from './components/Button';
+import React from 'react';
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Web1 from './components/web1';
+import Web2 from './components/web2';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Web1/>
+  },
+
+  {
+    path: "web2",
+    element: <Web2/>
+  },
+]);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <Button/>
-      <Button/>
-      <Button/>
-      hallo
-      </header>
+    <div>
+      <RouterProvider router={router}/>
     </div>
   );
 }

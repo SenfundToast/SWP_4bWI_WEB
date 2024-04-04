@@ -9,7 +9,6 @@ function App() {
       <h1 className='text-4xl font-bold text-center mt-4 mb-8'>Person Card</h1>
       <Person/>
     </div>
-
   );
 }
 
