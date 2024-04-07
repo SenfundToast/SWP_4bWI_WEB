@@ -8,6 +8,7 @@ module.exports = {
       background1: '#1E1E1E',
       firstplays: '#FFBA08',
       Bg2: '#370617',
+      yellow: '#FFBA08',
   }},
   },
   plugins: [],

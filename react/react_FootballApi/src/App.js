@@ -4,18 +4,19 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Web1 from './components/web1';
-import Web2 from './components/web2';
+
+import MatchTable from './components/MatchTable';
+import TeamTable from './components/TeamTable';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Web1/>
+    element: <MatchTable/>
   },
 
   {
-    path: "web2",
-    element: <Web2/>
+    path: "/teaminfos",
+    element: <TeamTable/>
   },
 ]);
 

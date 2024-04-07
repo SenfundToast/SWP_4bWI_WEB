@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Web2() {
+export default function TeamTable() {
     const [team, setTeam] = useState(null);
 
     useEffect(() => {
@@ -39,7 +40,8 @@ export default function Web2() {
                     <div className="col-span-1"></div>
                 </div>
             </div>
-            <a className="bg-yellow w-2/4 h-28 left-1/4 bottom-10  border-yellow rounded-xl absolute flex justify-center items-center text-black text-4xl font-hind" href="web.html">View Full Table</a>
+            <div className="bg-yellow w-2/4 h-28 left-1/4 bottom-10  border-yellow rounded-xl absolute flex justify-center items-center text-black text-4xl font-hind"><Link to="/">View Full Table</Link>
+            </div>
         </div>
     );
 }
