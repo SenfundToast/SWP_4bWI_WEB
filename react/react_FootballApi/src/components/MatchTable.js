@@ -5,7 +5,6 @@ import Teaminfo from './Teaminfo';
 
 
 export default function MatchTable() {
-
     const [teamsData, setTeamsData] = useState([]);
 
     function loadTable() {
@@ -37,7 +36,7 @@ export default function MatchTable() {
 
             <div>
                 <div className="header">
-                    <div className="Bundesliga">
+                    <div className="Bundesliga overflow-hidden">
                         Bundesliga 1
                     </div>
                 </div>
@@ -64,8 +63,8 @@ export default function MatchTable() {
                     </div>
 
                     {teamsData.map((element, index) =>
-                        <Teaminfo teamPlace={index + 1} teamName={element.teamName} teamIconURL={element.teamIconUrl} teamPoints={element.points}
-                            teamGamesPlayed={element.matches} teamGoalsScored={element.goals} teamGoalsConceded={element.opponentGoals}
+                        <Teaminfo teamPlace={index + 1} teamName={element.teamName} teamIconUrl={element.teamIconUrl} teamPoints={element.points}
+                            teamMatches={element.matches} teamGoals={element.goals} teamGoalsConceded={element.opponentGoals}
                             teamWins={element.won} teamDraws={element.draw} teamLoses={element.lost} />)}
 
                     <div id="table_1" className="bg-clifford max-w-full h-full items-center text-center mt-5"></div>
