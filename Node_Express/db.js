@@ -2,6 +2,7 @@
 const mysql = require("mysql2/promise");
 const dotenv = require("dotenv");
 dotenv.config();
+
 const pool = mysql.createPool({
     connectionLimit: 100,
     host: process.env.DB_HOST,
@@ -19,6 +20,7 @@ async function query(sql, params) {
         throw error;
     }
 }
+
 // Function to check the connection
 async function checkConnection() {
     try {
@@ -31,8 +33,11 @@ async function checkConnection() {
         // Close the connection pool
     }
 }
+
 // Call the function to check the connection
 checkConnection();
+
 module.exports = {
     query: query,
+    checkConnection: checkConnection
 };

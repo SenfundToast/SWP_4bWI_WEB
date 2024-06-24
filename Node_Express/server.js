@@ -1,6 +1,6 @@
-const express = require("express")
+const express = require("express");
 const bodyParser = require('body-parser');
-
+const db = require("./db");
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -16,7 +16,9 @@ const data = [
     { name: "Dimi", age: 11 }
 ]
 
-app.get("/people", (req, res) => {
+app.get("/people", async (req, res) => {
+    let result = db.query("select * from data")
+    console.log(result)
     res.send(data)
 })
 
